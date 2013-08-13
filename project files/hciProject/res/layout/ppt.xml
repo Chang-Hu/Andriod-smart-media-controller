@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PPTView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    <TextView
+        android:id="@+id/textViewp1"
+        android:layout_width="300dip"
+        android:layout_height="80dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="PPT Control"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="52dp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignTop="@+id/button_previous"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/button_previous"
+        android:background="@drawable/fast_forward"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button_project"
+        android:layout_width="200dip"
+        android:layout_height="120dip"
+        android:layout_alignBaseline="@+id/button_esc"
+        android:layout_alignBottom="@+id/button_esc"
+        android:layout_alignLeft="@+id/button_next"
+        android:text="Project"
+        android:textSize="52dp" />
+
+    <Button
+        android:id="@+id/button_esc"
+        android:layout_width="200dip"
+        android:layout_height="120dip"
+        android:layout_alignLeft="@+id/button_previous"
+        android:layout_below="@+id/button_previous"
+        android:layout_marginTop="164dp"
+        android:text="ESC"
+        android:textSize="52dp" />
+
+    <ImageButton
+        android:id="@+id/button_previous"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignRight="@+id/textViewp1"
+        android:layout_below="@+id/textViewp1"
+        android:layout_marginTop="81dp"
+        android:background="@drawable/fast_backward"
+        android:text="Button" />
+
+    <Switch
+        android:id="@+id/switch_ppt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button_next"
+        android:layout_below="@+id/textViewp1"
+        android:layout_marginTop="25dp"
+        android:text="Shake On/Off" />
+
+</RelativeLayout>

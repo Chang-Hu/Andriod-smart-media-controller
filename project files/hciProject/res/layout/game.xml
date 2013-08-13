@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GameView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:background="@drawable/background" >
+
+    <ImageButton
+        android:id="@+id/buttong2"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/play2"
+        android:text="Button" />
+
+
+    <ImageButton
+        android:id="@+id/buttong4"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_above="@+id/buttong2"
+        android:layout_toLeftOf="@+id/buttong2"
+        android:background="@drawable/play1"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/imageViewg1"
+        android:layout_width="200dip"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/enjoy2" />
+
+    <ImageButton
+        android:id="@+id/buttong8"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttong1"
+        android:background="@drawable/play4"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/buttong3"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/play4"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/buttong5"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_above="@+id/buttong3"
+        android:layout_toRightOf="@+id/buttong3"
+        android:background="@drawable/play1"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/buttong1"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignLeft="@+id/buttong4"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/play3"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/buttong6"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_below="@+id/buttong5"
+        android:layout_toRightOf="@+id/buttong3"
+        android:background="@drawable/play3"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/buttong7"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttong6"
+        android:background="@drawable/play2"
+        android:text="Button" />
+
+</RelativeLayout>

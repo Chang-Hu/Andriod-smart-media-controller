@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TVView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SmartController"
+        android:textSize="20dip" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="MOST"
+        android:textSize="20dip" />
+    
+        <ImageButton
+            android:id="@+id/volume_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_below="@+id/fastForward"
+        	android:layout_toLeftOf="@+id/fastForward"
+        	android:background="@drawable/minus">
+        	</ImageButton>
+
+        <ImageButton
+            android:id="@+id/fastBackward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volume_down"
+        	android:layout_centerHorizontal="true"
+        	android:background="@drawable/fast_backward">
+        	</ImageButton>
+        
+
+        <ImageButton
+            android:id="@+id/volume_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fastForward"
+        	android:layout_toRightOf="@+id/fastForward"
+        	android:background="@drawable/plus">
+        	</ImageButton>
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_below="@+id/fastForward"
+		android:layout_toLeftOf="@+id/volume_up"
+        android:background="@drawable/startpause" />
+
+    <ImageButton
+        android:id="@+id/fastForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fastBackward"
+        android:layout_marginTop="102dp"
+       android:background="@drawable/fast_forward"/>
+    
+    <ImageButton
+            android:id="@+id/lightDown"
+            android:layout_width="80dip"
+        	android:layout_height="80dip"
+            android:layout_below="@+id/fastBackward"
+        	android:layout_toLeftOf="@+id/fastBackward"
+        	android:background="@drawable/skip_backward">
+        	</ImageButton>
+        
+
+        <ImageButton
+            android:id="@+id/lightUp"
+            android:layout_width="80dip"
+        	android:layout_height="80dip"
+            android:layout_below="@+id/fastBackward"
+        	android:layout_toRightOf="@+id/fastBackward"
+        	android:background="@drawable/skip_forward">
+        	</ImageButton>
+		
+        <Switch
+        android:id="@+id/switch_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="25dp"
+        android:text="Shake On/Off" />
+</RelativeLayout>
