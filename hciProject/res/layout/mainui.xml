@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainUI"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <ImageButton
+        android:id="@+id/button1_scan"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/scan"
+        android:text="Scan"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_orange_dark"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/button4_video"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_alignTop="@+id/button1_scan"
+        android:layout_toLeftOf="@+id/button1_scan"
+        android:background="@drawable/video2"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/button5_game"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_alignLeft="@+id/button1_scan"
+        android:layout_below="@+id/button1_scan"
+        android:background="@drawable/game1"
+        android:text="Game"
+        android:textColor="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/button2_steer"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_above="@+id/button1_scan"
+        android:layout_toRightOf="@+id/button4_video"
+        android:background="@drawable/steer3"
+        android:text="Steer"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/IPText"
+        android:layout_width="400dip"
+        android:layout_height="65dip"
+        android:layout_above="@+id/button2_steer"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:textSize="25dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button0_connect"
+        android:layout_width="160dip"
+        android:layout_height="65dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/IPText"
+        android:text="Connect"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/button3_ppt"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_below="@+id/button2_steer"
+        android:layout_toRightOf="@+id/button1_scan"
+        android:background="@drawable/ppt1"
+        android:text="PPT"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
